@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: beige;
+  padding: 50px;
+}
+
+.app {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app ol {
+  width: 100%;
+  padding-block: 24px;
+  padding-left: 10%;
+}
+
+.app li {
+  margin-bottom: 1em; /* Расстояние снизу */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus {
+  background-color: #66afe9;;
+}
+
+.app_add-button {
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #5cb85c;
+  cursor: pointer;
+}
+
+.app_add-button:hover {
+  background-color: #449d44;
+}
+
+.list_delete-button {
+  border: none;
+  padding: 4px;
+  color: #fff;
+  background-color: #ce2610;
+  cursor: pointer;
+}
+
+.list_delete-button:hover {
+  background-color: #e93e14;
+}
+
+.totalPrice {
+  font-size: 1.5rem;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(-130px);
+}
